@@ -1,0 +1,45 @@
+
+    
+    <h1>Hi {{vm.user[0].firstname}}!</h1>
+    <p><a href="#!/login" class="btn btn-primary">Logout</a></p>
+    <br>
+    <h3>Alla Användare:</h3> <br>
+    
+    <table>
+        <thead>
+            <tr>
+                <!-- <th>Id</th> -->
+                <th class="col-md-6">Full Name</th>
+                <th class="col-md-5">Email</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="user in vm.allUsers">
+                <!-- <td>{{ user._id }}</td> -->
+                <td>{{ user.firstname }} {{ user.lastname }}</td>
+                <td>{{ user.email }}</td>
+                <td><a class="btn btn-sm btn-danger text-white" ng-click="vm.deleteUser(user._id)">Delete</a></td>
+            </tr>
+        </tbody>
+
+</table>
+
+<style>
+p a {
+    float: right;
+}
+
+h1{
+    color: blue;
+}
+th {
+    font-size: 18px;
+}
+td {
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+</style>
+

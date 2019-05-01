@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="angularApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Log in side</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.1/css/regular.css"
+    integrity="sha384-ELBQxbOyxSZRtZPNO1mVgYkEzMOXFNmQY6CLV1nw+4IZoiHWeuwYTnABxPxxsuBE" crossorigin="anonymous">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.1/css/fontawesome.css"
+    integrity="sha384-4HqGlagEHMyfaDQVabl1wx7GCtGw6hDl3sKJEhqQjOCrXrvizhaA2j4hK8Piewtr" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular-animate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular-cookies.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+
+</head>
+
+</head>
+<body>
+    <div id="topbar-back">
+        <div id="topbar" class="container col-md-9">
+            <ul>
+                <li><a href=""><i class="fab fa-facebook-f"></i></a></i></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-behance"></i></a></li>
+                <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                <li><a href=""><i class="fas fa-yin-yang"></i></a></li>
+            </ul>
+            <ul>
+                <li><a href=""><strong>FAQ</strong></a></li>
+                <li><a href=""><strong>TERMS</strong></a></li>
+            </ul>
+            <ul></ul>
+            <ul>
+                <li><a href=""><i class="fas fa-envelope"></i></a></li>
+                <li><i><a href=""><span>info@webmail.com</span></a></i></li>
+            </ul>
+
+            
+    <nav class="navbar navbar-expand navbar-light" style=" padding-top:0; color: white;">
+            <div class="container">
+         
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size:13px; margin-top:-10px;">
+                    <ul class="navbar-nav ">
+                        <a href="index.html" >login</a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        </div>
+    </div>
+    <div><a href="../fifthwork.html">Back to home side</a></div>
+    <div class="container mt-5">
+        <div    ng-class="{ 'alert': dialog, 'alert-success': dialog.type === 'success', 'alert-danger': dialog.type === 'error' }" 
+                ng-if="dialog" 
+                ng-bind="dialog.message">
+        </div>
+        <div ng-view></div>
+    </div>
+
+    <footer id="footer" style="background-image:url('../image/20_shop.jpg'); margin-top:100px;">
+        <div id="footer-in">
+            <div id="footer-in-first-line">
+                <div id="footer-in-logogroup">
+                    <div id="logo" style="margin-right:80px;">
+                        <img src="../image/logo.png" alt="">
+                        <h1 style="text-align:left;">Pohat<span style="color:#ff8155">.</span></h1>
+                    </div>
+                    <div>
+                        <p style="min-width:100px;">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, amet facere! Explicabo, illo
+                            provident voluptates minus possimus facilis autem omnis,
+                            sint accusantium fugiat laboriosam odit beatae. Vitae beatae obcaecati, tempora quisquam
+                            nisi
+                            ab? Ut aliquam unde fuga possimus itaque dolore cum
+                            facilis porro! Iste deserunt repudiandae perferendis earum, architecto tempore repellendus
+                            ratione modi magnam est vitae illum unde eius adipisci.
+                        </p>
+                    </div>
+                    <div id="footer-in-socialmedia">
+                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="" style="background-color:#ff8155"><i class="fab fa-twitter"
+                                    style="color:#ffffff"></i></a>
+                        </li>
+                        <li><a href=""><i class="fab fa-behance"></i></a></li>
+                        <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                        <li><a href=""><i class="fas fa-yin-yang"></i></a></li>
+                    </div>
+                </div>
+                <div>
+                    <h2>More Links.</h2>
+                    <div id="footer-links">
+                        <li><a href="">Paid SEO</a></li>
+                        <li><a href="">Service</a></li>
+                        <li><a href="">Digital Marketing</a></li>
+                        <li><a href="">Our Team</a></li>
+                        <li><a href="">Startgy Planning</a></li>
+                        <li><a href="">News</a></li>
+                        <li><a href="">Offline SEO</a></li>
+                        <li><a href="">Shop</a></li>
+                        <li><a href="">Page Rank Up</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">User Panel</a></li>
+                        <li><a href="">Book Appointment</a></li>
+                    </div>
+                </div>
+                <div>
+                    <h2>News Feeds.</h2>
+                    <div id="footer-news">
+                        <div id="footer-news-color"></div>
+                        <div>
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
+                                maxime.</h3>
+                            <p>14 July 2019</p>
+                        </div>
+                        <div id="footer-news-color"></div>
+                        <div>
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
+                                maxime.</h3>
+                            <p>14 July 2019</p>
+                        </div>
+                        <div id="footer-news-color"></div>
+                        <div>
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
+                                maxime.</h3>
+                            <p>14 July 2019</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div id="bottombar">Copyright By&copy;<strong style="color:orangered">NilArtStudio-</strong>2019
+            </div>
+    </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    <!-- Angular JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular-cookies.min.js"></script>    
+    
+    <script src="app.js"></script>
+    <script src="services/dialog.service.js"></script>
+    <script src="services/user.service.js"></script>
+    <script src="services/auth.service.js"></script>
+    
+    <script src="partials/home/home.controller.js"></script>
+    <script src="partials/login/login.controller.js"></script>
+    <script src="partials/register/register.controller.js"></script>
+    
+</body>
+</html>
